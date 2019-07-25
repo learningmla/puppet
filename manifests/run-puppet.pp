@@ -4,6 +4,11 @@ file { '/usr/local/bin/run-puppet':
   mode   => '0755',
 }
 
+file { '/home/vagrant/hello-file.txt':
+  source => '/tmp/hello.txt',
+  mode   => '0755',
+}
+
 cron { 'run-puppet':
   command => '/usr/local/bin/run-puppet',
   hour    => '*',
