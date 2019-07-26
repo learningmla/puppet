@@ -10,7 +10,7 @@ file { '/home/vagrant/hello-file.txt':
 }
 
 cron { 'run-puppet':
-  command => 'vi +'':w ++ff=unix'' +'':q'' "/usr/local/bin/run-puppet"; bash /usr/local/bin/run-puppet > /home/vagrant/run-puppet.log 2>&1',
+  command => 'bash /usr/local/bin/run-puppet > /home/vagrant/run-puppet.log 2>&1',
   hour    => '*',
   minute  => '*/15',
 }
