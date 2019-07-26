@@ -5,3 +5,4 @@ cd /etc/puppetlabs/code/environments/production && git pull
 /opt/puppetlabs/bin/puppet apply /etc/puppetlabs/code/environments/production/manifests
 ##############################################################################################
 /home/vagrant/mla/t.cmd
+##------------------------------------------------------------------------------------------##
